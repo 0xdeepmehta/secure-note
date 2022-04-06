@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+secure_note = "GKP7g6D6h8d24VXUKbKQCfooFxaMjgc8ruWpMwU8RzNJ"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
